@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    /* background-color: #000000; */
+    padding: 5px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #060606;
+}
+
+main {
+    padding: 90px;
+    text-align: center;
+}
+
+/* main h1 {
+    color: #4CAF50; */
+/* } */
+
+#skills {
+    padding: 50px 20px;
+    height: 80vh;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.skills-category {
+    margin-bottom: 40px;
+}
+
+.skills-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #d31f1f;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.skill-card {
+    width: 120px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    /* background-color: #333; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-p {
+    margin: 0;
+    position: fixed;
+    padding: 0%;
+    left: 0%;
+}
+

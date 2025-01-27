@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    background-color: #f4f4f9;
+    color: #333;
+}
+h1{
+    text-align: center;
+}
+
+header {
+    /* background-color: #000000; */
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+}
+
+.slider-container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    left: 400px;
+    top: 80px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+    display: flex;
+    /* transition: transform 60.3s ease-in-out; */
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.nav.prev {
+    left: 20%;
+}
+
+.nav.next {
+    right: 15%;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
+
+footer {
+    /* background-color: #333; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-p {
+    margin: 0;
+    position: fixed;
+    padding: 0%;
+    left: 0%;
+}
