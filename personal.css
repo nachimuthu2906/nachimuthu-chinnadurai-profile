@@ -113,14 +113,72 @@ footer {
     color: rgb(7, 7, 7);
     text-align: center;
     /* padding: 2px 0; */
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
 .footer-p {
     margin: 0;
-    position: fixed;
+    position: relative;
     padding: 0%;
     left: 0%;
+}
+/* Toggle button hidden by default */
+.menu-toggle {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15px; /* Adjust position as needed */
+  right: 0px; /* Adjust position as needed */
+  z-index: 1100;
+}
+@media (max-width: 768px){
+  .menu-toggle {
+    display: block; /* Show only on mobile screens */
+}
+/* header nav {
+  display: none;
+} */
+header nav ul {
+  display: none; /* Hidden by default on mobile */
+  flex-direction: column; /* Stack the menu items vertically */
+  background-color: #fff;
+  position: absolute;
+  top: 60px; /* Adjust as per header height */
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Show the navigation menu when active */
+header nav ul.active {
+  display: flex; /* Show the menu when the toggle button is clicked */
+}
+
+header nav ul li {
+  text-align: center;
+  margin: 10px 0; /* Add spacing between menu items */
+}
+
+header nav ul li a {
+  color: #333; /* Change the link color for better visibility */
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block; /* Make the links clickable over the full width */
+}
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.text-section h1{
+  font-size: 30px;
+}
+
 }

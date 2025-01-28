@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Carousel</title>
     <link rel="stylesheet" href="./certificate.css">
+    <script src="./toggle.js"></script>
 </head>
 <body>
     <header>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -22,7 +24,7 @@
         </nav>
     </header>
     <main>
-        <button class="nav prev">&#10094;</button>
+        <button class="nav prev"><</button>
     <div class="slider-container">
         <div class="slider">
             <img src="./c1.jpg" class="slide active" alt="Slide 1">
@@ -37,7 +39,7 @@
         <span class="dot" data-index="2"></span>
         <span class="dot" data-index="3"></span>
     </div>
-    <button class="nav next">&#10095;</button>
+    <button class="nav next">></button>
     <script src="script.js"></script>
     </main>
 </body>

@@ -145,6 +145,19 @@ footer {
 .footer-p {
     margin: 0;
 }
+/* Toggle button hidden by default */
+.menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 15px; /* Adjust position as needed */
+    right: 0px; /* Adjust position as needed */
+    z-index: 1100;
+}
 
 /* Animations */
 @keyframes bounce {
@@ -169,8 +182,43 @@ footer {
 @media screen and (max-width: 768px) {
     .timeline {
         flex-direction: column;
+        margin: 30px auto;
     }
 
+    .menu-toggle {
+          display: block; /* Show only on mobile screens */
+      }
+      /* header nav {
+        display: none;
+      } */
+      header nav ul {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column; /* Stack the menu items vertically */
+        background-color: #fff;
+        position: absolute;
+        top: 60px; /* Adjust as per header height */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+      
+      /* Show the navigation menu when active */
+      header nav ul.active {
+        display: flex; /* Show the menu when the toggle button is clicked */
+      }
+      
+      header nav ul li {
+        text-align: center;
+        margin: 10px 0; /* Add spacing between menu items */
+      }
+      
+      header nav ul li a {
+        color: #333; /* Change the link color for better visibility */
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block; /* Make the links clickable over the full width */
+      }
     .timeline::before {
         top: 0;
         bottom: 0;
@@ -192,4 +240,22 @@ footer {
         left: 50%;
         top: 10px;
     }
+    .timeline-item:nth-child(odd) .content {
+        transform: translateY(0px);
+    }
+    
+    .timeline-item:nth-child(even) .content {
+        transform: translateY(0px);
+    }
+    footer {
+        /* background-color: #333; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        /* padding: 10px 0; */
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    
 }

@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./toggle.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
     <header>
+        
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,9 +40,13 @@
                     <a href="https://github.com/nachimuthu2906"><i class="fa-brands fa-github"></i></a>
                     <a href="https://x.com/nachimuthu2906"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <a href="./Nachimuthu Chinnadurai.pdf" class="btn-download" download>
-                    <span>Download CV </span> &#128190;
-                  </a>
+                <a href="./Nachimuthu Chinnadurai.pdf" class="btn-download" target="_blank">
+                    <span>View CV</span> &#128196;
+                    <button id="download-btn" class="btn-download1">
+                        <span>Download CV</span> &#128190;
+                </a>               
+                </button>
+                </div>
             </div>
             
         </div>
@@ -48,4 +55,5 @@
         <p>&copy; 2025 Nachmuthu Chinnadurai. All rights reserved.</p>
     </footer>
     </html>
- 
+   
+    

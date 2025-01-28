@@ -92,13 +92,24 @@ body {
     text-decoration: none;
     background-color: #28a745;
     color: #fff;
-    padding: 10px 20px;
+    padding: 6px 9px;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
   }
-  
+  .btn-download1 {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    padding: 6px 9px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
   .btn-download:hover {
     background-color: #218838;
   }
@@ -143,7 +154,71 @@ footer {
     color: rgb(0, 0, 0);
     text-align: center;
     /* padding: 10px 0; */
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+/* Existing styles remain unchanged */
+
+/* Toggle button hidden by default */
+.menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 15px; /* Adjust position as needed */
+    right: 0px; /* Adjust position as needed */
+    z-index: 1100;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Show the toggle button */
+    .menu-toggle {
+        display: block; /* Show only on mobile screens */
+    }
+    .container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .photo  {
+        width: 305px;
+        height: 460px;
+        border-radius: 10%;
+        /* border: 5px solid #6c63ff; */
+        object-fit: cover;
+    }
+    /* Hide the navigation menu by default */
+    header nav ul {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column; /* Stack the menu items vertically */
+        background-color: #fff;
+        position: absolute;
+        top: 60px; /* Adjust as per header height */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Show the navigation menu when active */
+    header nav ul.active {
+        display: flex; /* Show the menu when the toggle button is clicked */
+    }
+
+    header nav ul li {
+        text-align: center;
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    header nav ul li a {
+        color: #333; /* Change the link color for better visibility */
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block; /* Make the links clickable over the full width */
+    }
 }
